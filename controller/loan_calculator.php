@@ -2,14 +2,14 @@
 session_start(); 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['calcular'])) {
-    $principal = isset($_POST['principal']) ? floatval($_POST['principal']) : 0;
-    $tasa_interes_anual = isset($_POST['tasa_interes']) ? floatval($_POST['tasa_interes']) : 0;
-    $plazo = isset($_POST['plazo']) ? intval($_POST['plazo']) : 0;
+    $loan_amount = isset($_POST['principal']) ? floatval($_POST['principal']) : 0;
+    $rate_year = isset($_POST['tasa_interes']) ? floatval($_POST['tasa_interes']) : 0;
+    $time_limit = isset($_POST['plazo']) ? intval($_POST['plazo']) : 0;
 
-    $r = ($tasa_interes_anual / 12) / 100;
+    $r = ($rate_year / 12) / 100;
 
-    if ($principal > 0 && $tasa_interes_anual > 0 && $plazo > 0) {
-        $cuota_mensual = ($principal * $r * pow((1 + $r), $plazo)) / (pow((1 + $r), $plazo) - 1);
+    if ($loan_amount > 0 && $rate_year > 0 && $time_limit > 0) {
+        $cuota_mensual = ($loan_amount * $r * pow((1 + $r), $time_limit)) / (pow((1 + $r), $time_limit) - 1);
 
         $_SESSION['resultado'] = number_format($cuota_mensual, 2);
     } else {

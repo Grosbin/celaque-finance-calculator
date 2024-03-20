@@ -20,8 +20,9 @@ body {
   flex-direction: column;
   max-width: 400px;
   background-color: white;
-  padding: 15px;
+  padding: 30px;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 .field__input {
@@ -31,7 +32,7 @@ body {
 }
 
 input {
-  width: 90%;
+  width: 92%;
   padding: 15px;
   border: none;
   border-radius: 5px;
@@ -95,6 +96,7 @@ label {
   background-color: white;
   padding: 15px;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 a {
