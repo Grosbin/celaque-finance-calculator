@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Inicio - Calculadora de Préstamos</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
