@@ -8,7 +8,7 @@
     <input type="number" id="principal" name="principal" required />
   </div>
   <div class="field__input">
-    <label for="tasa_interes">Tasa de interés anual (en porcentaje):</label>
+    <label for="tasa_interes">Tasa de interés anual:</label>
     <input
       type="number"
       step="0.01"
